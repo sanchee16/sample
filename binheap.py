@@ -1,4 +1,5 @@
-'''priority queue in which you dequeue from front with highest priority at front.Best part is its complixity is O(log n).
+'''
+Priority Queue in which you dequeue from front with highest priority at front.Best part is its complixity is O(log n).
 BinHeap allows us to dequeue and enqueue in O(log n).Thus when you enqueue an item on a priority queue, the new item may move all the way to the front. 
 Min heap max heap
 Opertions:
@@ -24,12 +25,13 @@ Fibonacci heaps can insert elements, query the highest priority element, and inc
 though deletions are still O(log n). Brodal queues can do this in worst-case constant time.
 
 Used in 
-1.Bandwidth management
-2.Discreet event simulation
-3.Dijkstras algorithm
-4.Huffman Coding
-5.A* and SMA*
-6.ROAM triangulation algorithm '''
+1. Bandwidth management
+2. Discreet event simulation
+3. Dijkstras algorithm
+4. Huffman Coding
+5. A* and SMA*
+6. ROAM triangulation algorithm
+'''
 
 
 class BinHeap:
@@ -80,4 +82,4 @@ class BinHeap:
             self.percDown(i)
             i = i-1
 
-#using dictionaries
+# TODO: Implement using dictionaries
